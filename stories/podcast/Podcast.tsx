@@ -1,5 +1,6 @@
+'use client'
 import React from 'react';
-import './podcast.css';
+import './podcast.scss';
 
 export type PodcastProps = {
  imageSrc: string;
@@ -10,7 +11,7 @@ export type PodcastProps = {
 
 const Podcast: React.FC<PodcastProps> = ({ imageSrc, title, subtitle, onClick }) => {
  return (
-    <div className="clickable-div" onClick={onClick}>
+    <div className="podcast" onClick={onClick}>
       <div className="image-container">
         <img src={imageSrc} alt="Imagen circular" className="circular-image" />
       </div>
