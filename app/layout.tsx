@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/stories/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>Some layout shared navbar</div>
+        <Navbar linkText="Podcaster" linkUrl={'/'} loading/>
           {children}
       </body>
     </html>

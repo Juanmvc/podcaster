@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: blueviolet;
+    border-bottom: 1px solid #eae8e4;
+
+
+    .navbar-link {
+        text-decoration: none;
+        color: blueviolet;
+        font-weight: bold;
+       }
+       
+    .pulse-indicator {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        animation: pulse 1s infinite;
+    }
+   }
+   
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+      }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+   
