@@ -1,6 +1,5 @@
-
-import getPodcastList from "./application/getPodcastList";
-import PodcastList from "./ui/sections/PodcastList";
+import getPodcastList from "@/app/application/getPodcastList";
+import PodcastList from "@/app/ui/sections/PodcastList";
 
 async function PodcastListPage() {
 

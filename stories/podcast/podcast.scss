@@ -4,12 +4,8 @@
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    width: 220px;
 
     .image-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
         position: absolute;
         z-index: 1;
     }

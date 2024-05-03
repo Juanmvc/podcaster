@@ -23,6 +23,6 @@ export const Default: Story = {
         imageSrc: 'https://via.placeholder.com/150',
         title: 'Título del podcast',
         subtitle: 'Subtítulo del podcast',
-        onClick: () => console.log('Podcast click'),
+        url: 'podcast url',
     },
   };

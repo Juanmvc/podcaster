@@ -1,27 +1,28 @@
 'use client'
 import React from 'react';
 import './podcast.scss';
+import Link from 'next/link';
 
-export type PodcastProps = {
+export type PodcastSummaryProps = {
  imageSrc: string;
  title: string;
  subtitle: string;
- onClick: () => void;
+ url: string;
 }
 
-const Podcast: React.FC<PodcastProps> = ({ imageSrc, title, subtitle, onClick }) => {
+const PodcastSummary: React.FC<PodcastSummaryProps> = ({ imageSrc, title, subtitle, url }) => {
  return (
-    <div className="podcast" onClick={onClick}>
+    <Link className="podcast" href={url}>
       <div className="image-container">
         <img src={imageSrc} alt="Imagen circular" className="circular-image" />
       </div>
       <div className="text-container">
-        <h2 className="title">{title}</h2>
+        <h3 className="title">{title}</h3>
         <p className="subtitle">{subtitle}</p>
       </div>
-    </div>
+    </Link>
  );
 };
 
-export default Podcast;
+export default PodcastSummary;
 
