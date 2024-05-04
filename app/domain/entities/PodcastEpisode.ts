@@ -1,30 +1,40 @@
 
 type PodcastEpisodeProps = {
-    id: number;
-    title: string;
-    description: string;
-    url: string;
-  };
+  id: number;
+  title: string;
+  description: string;
+  releaseDate: Date;
+  duration: number;
+  url: string;
+};
   
-  export default class PodcastEpisode {
-    readonly id: number;
+export default class PodcastEpisode {
+  readonly id: number;
+
+  readonly title: string;
   
-    readonly title: string;
-    
-    readonly description: string;
-  
-    readonly url: string;
-  
-    constructor({
-      id,
-      title,
-      description,
-      url,
-    }: PodcastEpisodeProps) {
-      this.id = id;
-      this.title = title;
-      this.description = description;
-      this.url = url;
-    }
+  readonly description: string;
+
+  readonly releaseDate: Date;
+
+  readonly duration: number;
+
+  readonly url: string;
+
+  constructor({
+    id,
+    title,
+    description,
+    releaseDate,
+    duration,
+    url,
+  }: PodcastEpisodeProps) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.releaseDate = releaseDate;
+    this.duration = duration;
+    this.url = url;
   }
+}
   
