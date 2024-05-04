@@ -2,9 +2,14 @@
  * Variables
  */
  @import './config/breakpoints';
- @import './config/spacingConfig';
+
+ /**
+ * mixins
+ */
+@import './mixins/media';
 
  /**
  * functions
  */
 @import './functions/size';
+@import './functions/spacing';
