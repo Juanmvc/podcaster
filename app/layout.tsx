@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Anek_Latin } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/stories/navbar/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Anek_Latin({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Podcaster",
