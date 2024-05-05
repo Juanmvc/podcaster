@@ -1,25 +1,25 @@
 @import '../../../../stories/settings.scss';
 
 .podcast-list {
-    padding: 32px;
+    padding: spacing(4);
 
     &__filter {
         display: flex;
         flex-direction: row;
         justify-content: right;
-        padding: 12px;
-        gap: 8px;
-        margin-bottom: 16px;
+        padding: spacing(1.5);
+        gap: spacing(1);
+        margin-bottom: spacing(2);
     }
 
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        gap: spacing(1);
     
         @include media-lg-and-up {
             grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
+            gap: spacing(2);
         }
     }
 }

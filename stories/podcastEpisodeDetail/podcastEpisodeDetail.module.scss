@@ -1,8 +1,11 @@
+@import '../settings.scss';
+
 .podcast-episode-detail {
     display: flex;
     flex-direction: column;
     border: 1px solid #e5e7eb;
-    padding: 16px;
+    padding: spacing(2);
+    gap: spacing(4);
     height: fit-content;
 
     &__title {

@@ -3,12 +3,12 @@
 .episode-detail-page {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 16px;
-    margin-right: 16px;
-    gap: 24px;
+    margin-left: spacing(2);
+    margin-right: spacing(2);
+    gap: spacing(3);
 
     @include media-lg-and-up {
-        gap: 48px;
+        gap: spacing(6);
         grid-template-columns: 1fr 3fr;
     }
 }

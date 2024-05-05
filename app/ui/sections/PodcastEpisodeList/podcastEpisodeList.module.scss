@@ -4,6 +4,6 @@
     border: 1px solid #e5e7eb;
 
     @include media-lg-and-up {
-        padding: 16px 24px 16px 24px;
+        padding: spacing(2) spacing(3) spacing(2) spacing(3);
     }
 }

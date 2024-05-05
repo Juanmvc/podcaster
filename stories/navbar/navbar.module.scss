@@ -1,15 +1,17 @@
+@import '../settings.scss';
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: spacing(1.5);
     color: blueviolet;
     border-bottom: 1px solid #eae8e4;
-    margin-bottom: 48px;
+    margin-bottom: spacing(6);
 
     &-link {
         text-decoration: none;
-        font-size: 32px;
+        font-size: spacing(4);
         color: blueviolet;
         font-weight: bold;
        }

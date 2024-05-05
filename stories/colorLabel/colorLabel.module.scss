@@ -1,9 +1,11 @@
+@import '../settings.scss';
+
 .color-label {
     border-radius: 20px;
-    padding: 8px;
+    padding: spacing(1);
     background-color: #4169E1;
     width: fit-content;
     text-align: center;
-    min-width: 48px;
+    min-width: spacing(6);
     color: white;
 }
