@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import classes from './colorLabel.module.scss';
 
 const MODULE_PREFIX = 'color-label';
 
 interface ColorLabelProps {
- text: string;
+   children: ReactNode;
 }
 
-const ColorLabel: React.FC<ColorLabelProps> = ({ text }) => {
+const ColorLabel: React.FC<ColorLabelProps> = ({ children }) => {
  return (
-    <p className={classes[MODULE_PREFIX]}>{text}</p>
+    <p className={classes[MODULE_PREFIX]}>{children}</p>
  );
 };
 

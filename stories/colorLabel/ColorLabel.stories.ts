@@ -20,6 +20,6 @@ const meta = {
 
 export const Default: Story = {
     args: {
-        text: "some text"
+        children: "some text"
     },
   };
