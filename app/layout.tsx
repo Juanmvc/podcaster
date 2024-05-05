@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ReactQueryProvider>
-          <Navbar linkText="Podcaster" linkUrl={'/'} loading/>
+          <Navbar linkText="Podcaster" linkUrl={'/'}/>
             {children}
         </ReactQueryProvider>
       </body>

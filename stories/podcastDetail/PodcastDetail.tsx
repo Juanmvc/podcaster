@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './podcastDetail.module.scss';
+import Link from 'next/link';
 
 const MODULE_PREFIX = 'podcast-detail';
 
@@ -8,11 +9,12 @@ export type PodcastDetailProps = {
  title: string;
  author: string;
  description: string;
+ url?: string;
 }
 
-const PodcastDetail: React.FC<PodcastDetailProps> = ({ imageSrc, title, author, description }) => {
+const PodcastDetail: React.FC<PodcastDetailProps> = ({ imageSrc, title, author, description, url = '' }) => {
  return (
-    <div className={classes[MODULE_PREFIX]}>
+    <Link className={classes[MODULE_PREFIX]} href={url}>
       <div className={classes[`${MODULE_PREFIX}__image-container`]}>
         <img src={imageSrc} alt="Imagen circular" className={classes[`${MODULE_PREFIX}__image`]}/>
       </div>
@@ -24,7 +26,7 @@ const PodcastDetail: React.FC<PodcastDetailProps> = ({ imageSrc, title, author, 
         <p className={classes[`${MODULE_PREFIX}__description`]}>Description:</p>
         <p className={classes[`${MODULE_PREFIX}__description-text`]}>{description}</p>
       </div>
-    </div>
+    </Link>
  );
 };
 
