@@ -2,13 +2,13 @@ import React from 'react';
 import classes from './podcastEpisodeDetail.module.scss';
 import PureHTMLContent from '../pureHTMLContent/PureHTMLContent';
 
-export type PodcastProps = {
+export type PodcastEpisodeDetailProps = {
  title: string;
  description: string;
  audioUrl: string;
 }
 
-const Podcast: React.FC<PodcastProps> = ({ title, description, audioUrl }) => {
+const PodcastEpisodeDetail: React.FC<PodcastEpisodeDetailProps> = ({ title, description, audioUrl }) => {
  return (
     <div className={classes["podcast-episode-detail"]}>
         <h2 className={classes["title"]}>{title}</h2>
@@ -21,4 +21,4 @@ const Podcast: React.FC<PodcastProps> = ({ title, description, audioUrl }) => {
  );
 };
 
-export default Podcast;
+export default PodcastEpisodeDetail;

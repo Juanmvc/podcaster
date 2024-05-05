@@ -1,4 +1,4 @@
-import Podcast, { PodcastPrimitiveProps } from "@/app/domain/entities/Podcast";
+import { PodcastPrimitiveProps } from "@/app/domain/entities/Podcast";
 import PodcastSummary from "@/stories/podcast/Podcast";
 
 const MODULE_PREFIX = 'podcast-list';

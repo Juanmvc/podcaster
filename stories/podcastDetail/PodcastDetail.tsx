@@ -1,14 +1,14 @@
 import React from 'react';
 import './podcastDetail.scss';
 
-export type PodcastProps = {
+export type PodcastDetailProps = {
  imageSrc: string;
  title: string;
  author: string;
  description: string;
 }
 
-const Podcast: React.FC<PodcastProps> = ({ imageSrc, title, author, description }) => {
+const PodcastDetail: React.FC<PodcastDetailProps> = ({ imageSrc, title, author, description }) => {
  return (
     <div className="podcast-detail">
       <div className="image-container">
@@ -26,5 +26,5 @@ const Podcast: React.FC<PodcastProps> = ({ imageSrc, title, author, description 
  );
 };
 
-export default Podcast;
+export default PodcastDetail;
 
