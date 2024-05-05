@@ -26,7 +26,7 @@ type ArtistAttributes = {
 
 type Artist = {
     label: string;
-    attributes: ArtistAttributes;
+    attributes?: ArtistAttributes;
 }
 
 export type EntryItunes = {
