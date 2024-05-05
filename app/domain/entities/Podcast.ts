@@ -49,5 +49,20 @@
         imageUrl: this.imageUrl,
       };
     }
+
+    static fromPrimitive({
+      id,
+      title,
+      author,
+      description,
+      imageUrl
+    }: PodcastPrimitiveProps): Podcast {
+      return new Podcast({       
+        id,
+        title,
+        author,
+        description,
+        imageUrl });
+    }
   }
   

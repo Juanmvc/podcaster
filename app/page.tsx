@@ -1,5 +1,7 @@
 
+import { useState } from "react";
 import getPodcastList from "./application/getPodcastList";
+import Podcast from "./domain/entities/Podcast";
 import PodcastList from "./ui/sections/PodcastList";
 
 async function PodcastListPage() {
