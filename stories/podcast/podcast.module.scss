@@ -5,19 +5,19 @@
     padding: 10px;
     cursor: pointer;
 
-    .image-container {
+    &__image-container {
         position: absolute;
         z-index: 1;
     }
     
-    .circular-image {
+    &__circular-image {
         width: 125px;
         height: 125px;
         border-radius: 50%;
         object-fit: cover;
     }
     
-    .text-container {
+    &__text-container {
         display: flex;
         border: 1px solid #e5e7eb;
         box-shadow: 0px 2px 4px #e8e8e8;
@@ -32,17 +32,17 @@
         min-height: 100px;
     }
     
-    .title {
+    &__title {
         font-weight: bold;
         margin: 10px 0;
         text-align: center;
     }
     
-    .subtitle {
+    &__subtitle {
         margin: 5px 0;
         text-align: center;
     }
-   }
+}
    
 
 

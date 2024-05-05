@@ -2,7 +2,7 @@
 
 .podcast-episode-list {
 
-    .podcast-episode-list-table {
+    &__table {
         width: 100%;
         border-collapse: collapse;
 
@@ -27,15 +27,15 @@
             }
         }
 
-        .title {
+        &__title {
             text-align: left;
         }
 
-        .even-row {
+        &__even-row {
             background-color: #f2f2f2;
         }
 
-        .odd-row {
+        &__odd-row {
             background-color: #ffffff;
         }
     
@@ -44,7 +44,7 @@
             text-align: end;
         }
 
-        .row-title {
+        &__row-title {
             width: 70%;
             a {
                 text-decoration: none;

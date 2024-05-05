@@ -5,20 +5,20 @@
     padding: 10px;
     height: fit-content;
 
-    .image-container {
+    &__image-container {
         display: flex;
         justify-content: center;
         padding: 16px;
         border-bottom: 1px solid #e5e7eb;
     }
     
-    .image {
+    &__image {
         width: 125px;
         height: 125px;
         object-fit: cover;
     }
     
-    .title-author-container {
+    &__title-author-container {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -26,16 +26,16 @@
         border-bottom: 1px solid #e5e7eb;
     }
     
-    .title {
+    &__title {
         font-weight: bold;
         margin: 10px 0;
     }
     
-    .author {
+    &__author {
         margin: 5px 0;
     }
 
-    .description-container {
+    &__description-container {
         padding: 16px;
     }
 }

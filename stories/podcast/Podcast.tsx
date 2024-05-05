@@ -1,7 +1,9 @@
 'use client'
 import React from 'react';
-import './podcast.scss';
+import classes from './podcast.module.scss';
 import Link from 'next/link';
+
+const MODULE_PREFIX = 'podcast';
 
 export type PodcastSummaryProps = {
  imageSrc: string;
@@ -12,13 +14,13 @@ export type PodcastSummaryProps = {
 
 const PodcastSummary: React.FC<PodcastSummaryProps> = ({ imageSrc, title, subtitle, url }) => {
  return (
-    <Link className="podcast" href={url}>
-      <div className="image-container">
-        <img src={imageSrc} alt="Imagen circular" className="circular-image" />
+    <Link className={classes[MODULE_PREFIX]} href={url}>
+      <div className={classes[`${MODULE_PREFIX}__image-container`]}>
+        <img src={imageSrc} alt="Imagen circular" className={classes[`${MODULE_PREFIX}__circular-image`]}/>
       </div>
-      <div className="text-container">
-        <h3 className="title">{title}</h3>
-        <p className="subtitle">{subtitle}</p>
+      <div className={classes[`${MODULE_PREFIX}__text-container`]}>
+        <h3 className={classes[`${MODULE_PREFIX}__title`]}>{title}</h3>
+        <p className={classes[`${MODULE_PREFIX}__subtitle`]}>{subtitle}</p>
       </div>
     </Link>
  );

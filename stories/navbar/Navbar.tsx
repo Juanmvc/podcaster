@@ -1,7 +1,8 @@
 import React from 'react';
-import './navbar.scss';
+import classes from './navbar.module.scss';
 import Link from 'next/link';
 
+const MODULE_PREFIX = 'navbar';
 
 interface NavbarProps {
  linkText: string;
@@ -11,10 +12,10 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ linkText, linkUrl, loading = false }) => {
  return (
-    <nav className="navbar">
-      <Link href={linkUrl} className="navbar-link">{linkText}</Link>
+    <nav className={classes[MODULE_PREFIX]}>
+      <Link href={linkUrl} className={classes[`${MODULE_PREFIX}-link`]}>{linkText}</Link>
       {loading &&
-        <div className="pulse-indicator"/>
+        <div className={classes[`${MODULE_PREFIX}-pulse-indicator`]}/>
       }
     </nav>
  );

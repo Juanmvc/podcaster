@@ -1,5 +1,7 @@
 import React from 'react';
-import './podcastEpisodeListTable.scss';
+import classes from './podcastEpisodeListTable.module.scss';
+
+const MODULE_PREFIX = 'podcast-episode-list';
 
 export type TableRow = {
  title: string;
@@ -14,21 +16,21 @@ type PodcastEpisodeListTableProps = {
 
 const PodcastEpisodeListTable: React.FC<PodcastEpisodeListTableProps> = ({ rows }) => {
  return (
-    <div className="podcast-episode-list">
-      <table className="podcast-episode-list-table">
+    <div className={classes[MODULE_PREFIX]}>
+      <table className={classes[`${MODULE_PREFIX}__table`]}>
         <thead>
           <tr>
-            <th className='title'>Título</th>
-            <th className='date'>Fechas</th>
-            <th className='duration'>Duración</th>
+            <th className={classes[`${MODULE_PREFIX}__table__title`]}>Título</th>
+            <th className={classes[`${MODULE_PREFIX}__table__date`]}>Fechas</th>
+            <th className={classes[`${MODULE_PREFIX}__table__duration`]}>Duración</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row, index) => (
-            <tr key={index} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
-              <td className='row-title'><a href={row.url}>{row.title}</a></td>
-              <td className='row-date'>{row.date}</td>
-              <td className='row-duration'>{row.duration}</td>
+            <tr key={index} className={index % 2 === 0 ? classes[`${MODULE_PREFIX}__table__even-row`] : classes[`${MODULE_PREFIX}__table__odd-row`]}>
+              <td className={classes[`${MODULE_PREFIX}__table__row-title`]}><a href={row.url}>{row.title}</a></td>
+              <td className={classes[`${MODULE_PREFIX}__table__row-date`]}>{row.date}</td>
+              <td className={classes[`${MODULE_PREFIX}__table__row-duration`]}>{row.duration}</td>
             </tr>
           ))}
         </tbody>

@@ -7,14 +7,14 @@
     border-bottom: 1px solid #eae8e4;
     margin-bottom: 48px;
 
-    .navbar-link {
+    &-link {
         text-decoration: none;
         font-size: 32px;
         color: blueviolet;
         font-weight: bold;
        }
        
-    .pulse-indicator {
+    &-pulse-indicator {
         width: 25px;
         height: 25px;
         border-radius: 50%;
