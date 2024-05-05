@@ -1,0 +1,12 @@
+@import '../../../../stories/settings.scss';
+
+.podcast-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+    @include media-lg-and-up {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+}

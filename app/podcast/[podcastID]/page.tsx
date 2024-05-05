@@ -4,6 +4,7 @@ import presentPodcastEpisodesTableRow from "@/app/ui/presenters/PodcastEpisodeLi
 import PodcastDetail from "@/stories/podcastDetail/PodcastDetail";
 import PodcastEpisodeListTable from "@/stories/podcastEpisodeListTable/PodcastEpisodeListTable";
 import classes from './page.module.scss';
+import PodcastEpisodeList from "@/app/ui/sections/PodcastEpisodeList";
 
 async function PodcastDetailPage(context: { params: {podcastID: string}}) {
 
@@ -21,7 +22,7 @@ async function PodcastDetailPage(context: { params: {podcastID: string}}) {
           <PodcastDetail title={podcast.title} author={podcast.author} description={podcast.description} imageSrc={podcast.imageUrl}/>
         }
         {podcastEpisodesTableRows && 
-          <PodcastEpisodeListTable rows={podcastEpisodesTableRows}/>
+          <PodcastEpisodeList podcastEpisodesTableRows={podcastEpisodesTableRows}/>
         }
         <div>{podcastEpisodesTableRows.length}</div>
       </div>

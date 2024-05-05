@@ -1,3 +1,4 @@
+import classes from './podcastList.module.scss';
 import { PodcastPrimitiveProps } from "@/app/domain/entities/Podcast";
 import PodcastSummary from "@/stories/podcast/Podcast";
 
@@ -9,11 +10,7 @@ export default function PodcastList({
     podcastList: PodcastPrimitiveProps[];
 }) {
   return (
-    <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '16px',
-      }}>
+    <div className={classes[MODULE_PREFIX]}>
         {podcastList.map(
           ({ id,
             title,

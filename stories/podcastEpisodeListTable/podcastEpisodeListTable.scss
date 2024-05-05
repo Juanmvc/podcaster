@@ -1,21 +1,30 @@
+@import '../settings.scss';
+
 .podcast-episode-list {
-    border: 1px solid #e5e7eb;
-    padding: 16px 24px 16px 24px;
 
     .podcast-episode-list-table {
         width: 100%;
         border-collapse: collapse;
 
         th, td {
-            padding: 16px;
+            padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+
+            @include media-lg-and-up {
+                padding: 16px;         
+            }
         }
 
         th {
             background-color: #ffffff;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            @include media-lg-and-up {
+                padding-left: 16px;
+                padding-right: 16px;            
+            }
         }
 
         .title {
