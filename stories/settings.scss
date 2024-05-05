@@ -1,15 +1,15 @@
 /**
  * Variables
  */
- @import './config/breakpoints';
+ @import './styleSettings/config/breakpoints';
 
  /**
  * mixins
  */
-@import './mixins/media';
+@import './styleSettings/mixins/media';
 
  /**
  * functions
  */
-@import './functions/size';
-@import './functions/spacing';
+@import './styleSettings/functions/size';
+@import './styleSettings/functions/spacing';
