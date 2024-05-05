@@ -6,6 +6,9 @@ import ColorLabel from '@/stories/colorLabel/ColorLabel';
 import PodcastSummary from "@/stories/podcast/Podcast";
 import { useState } from 'react';
 import { useFilteredList } from '../../hooks/usePodcastFilteredList';
+import { useQuery } from '@tanstack/react-query';
+import getPodcastList from '@/app/application/getPodcastList';
+import { one_day_in_ms } from '@/app/domain/const/time';
 
 const MODULE_PREFIX = 'podcast-list';
 
@@ -15,8 +18,15 @@ export default function PodcastList({
     podcastList: PodcastPrimitiveProps[];
 }) {
 
+  const { data } = useQuery({
+    queryKey: ['initial-podcasts'],
+    queryFn: () => getPodcastList({limit: 100, genreID: 1310}),
+    initialData: podcastList,
+    staleTime: one_day_in_ms,
+  });
+
   const [value, setValue] = useState('')
-  const podcastEntityList = podcastList.map(podcast => Podcast.fromPrimitive({...podcast}))
+  const podcastEntityList = data.map(podcast => Podcast.fromPrimitive({...podcast}))
 
   const filteredPodcastList = useFilteredList(podcastEntityList, value);
 

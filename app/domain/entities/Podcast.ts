@@ -40,7 +40,7 @@
       this.imageUrl = imageUrl;
     }
 
-    toPrimitive(): PodcastProps {
+    toPrimitive(): PodcastPrimitiveProps {
       return {
         id: this.id,
         title: this.title,

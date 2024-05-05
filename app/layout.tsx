@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anek_Latin } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/stories/navbar/Navbar";
+import ReactQueryProvider from "./providers/ReactQueryProvider";
 
 const inter = Anek_Latin({ subsets: ["latin"] });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar linkText="Podcaster" linkUrl={'/'} loading/>
-          {children}
+        <ReactQueryProvider>
+          <Navbar linkText="Podcaster" linkUrl={'/'} loading/>
+            {children}
+        </ReactQueryProvider>
       </body>
     </html>
   );
