@@ -1,16 +1,15 @@
-import classes from './PureHTMLContent.module.scss';
+import React from "react";
+import classes from "./PureHTMLContent.module.scss";
 
 type PureHTMLContentProps = {
   html: string;
 };
 
-const PureHTMLContent = ({
-  html,
-}: PureHTMLContentProps) => {
-
+const PureHTMLContent = ({ html }: PureHTMLContentProps) => {
   return (
     <div
-      className={classes['PureHTMLContent']}
+      data-testid="audio-control"
+      className={classes["PureHTMLContent"]}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
