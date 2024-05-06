@@ -1,56 +1,56 @@
-@import '../settings.scss';
+@import "../settings.scss";
 
 .podcast-episode-list {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
 
-    &__table {
-        width: 100%;
-        border-collapse: collapse;
+    th,
+    td {
+      padding: spacing(1);
+      text-align: left;
+      border-bottom: 1px solid #ddd;
 
-        th, td {
-            padding: spacing(1);
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-
-            @include media-lg-and-up {
-                padding: spacing(2);         
-            }
-        }
-
-        th {
-            background-color: #ffffff;
-            padding-left: spacing(1);
-            padding-right: spacing(1);
-
-            @include media-lg-and-up {
-                padding-left: spacing(2);
-                padding-right: spacing(2);            
-            }
-        }
-
-        &__title {
-            text-align: left;
-        }
-
-        &__even-row {
-            background-color: #f2f2f2;
-        }
-
-        &__odd-row {
-            background-color: #ffffff;
-        }
-    
-        th:last-child, td:last-child {
-            white-space: nowrap;
-            text-align: end;
-        }
-
-        &__row-title {
-            width: 70%;
-            a {
-                text-decoration: none;
-                color:  #3B82F6 ;
-            }
-        }
+      @include media-lg-and-up {
+        padding: spacing(2);
+      }
     }
+
+    th {
+      background-color: #ffffff;
+      padding-left: spacing(1);
+      padding-right: spacing(1);
+
+      @include media-lg-and-up {
+        padding-left: spacing(2);
+        padding-right: spacing(2);
+      }
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__even-row {
+      background-color: #f2f2f2;
+    }
+
+    &__odd-row {
+      background-color: #ffffff;
+    }
+
+    th:last-child,
+    td:last-child {
+      white-space: nowrap;
+      text-align: end;
+    }
+
+    &__row-title {
+      width: 70%;
+      a {
+        text-decoration: none;
+        color: #3b82f6;
+      }
+    }
+  }
 }
-   

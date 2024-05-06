@@ -1,3 +1,4 @@
+import React from "react";
 import getPodcastEpisodeList from "@/app/application/getPodcastEpisodeList";
 import getPodcastList from "@/app/application/getPodcastList";
 import PodcastDetail from "@/stories/podcastDetail/PodcastDetail";

@@ -1,14 +1,14 @@
-@import '../settings.scss';
+@import "../settings.scss";
 
 .podcast-episode-detail {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #e5e7eb;
-    padding: spacing(2);
-    gap: spacing(4);
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  padding: spacing(2);
+  gap: spacing(4);
+  height: fit-content;
 
-    &__title {
-        font-weight: bold;
-    }
+  &__title {
+    font-weight: bold;
+  }
 }

@@ -1,9 +1,9 @@
-@import '../../../../stories/settings.scss';
+@import "../../../../stories/settings.scss";
 
 .podcast-episode-list {
-    border: 1px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
 
-    @include media-lg-and-up {
-        padding: spacing(2) spacing(3) spacing(2) spacing(3);
-    }
+  @include media-lg-and-up {
+    padding: spacing(2) spacing(3) spacing(2) spacing(3);
+  }
 }

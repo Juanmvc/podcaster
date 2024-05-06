@@ -1,8 +1,11 @@
-@import '../settings.scss';
+@import "../settings.scss";
 
 //this styles are expected to be expanded as needed
 .PureHTMLContent {
-  p, ul, ol, li {
+  p,
+  ul,
+  ol,
+  li {
     font-size: pxToRem(16);
     line-height: pxToRem(19);
     text-align: justify;

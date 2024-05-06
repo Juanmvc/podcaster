@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import { Anek_Latin } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/stories/navbar/Navbar";
@@ -20,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ReactQueryProvider>
-          <Navbar linkText="Podcaster" linkUrl={'/'}/>
-            {children}
+          <Navbar linkText="Podcaster" linkUrl={"/"} />
+          {children}
         </ReactQueryProvider>
       </body>
     </html>
