@@ -5,14 +5,13 @@
   justify-content: space-between;
   align-items: center;
   padding: spacing(1.5);
-  color: blueviolet;
-  border-bottom: 1px solid #eae8e4;
+  border-bottom: 1px solid  $color-grey-faded;
   margin-bottom: spacing(6);
 
   &-link {
     text-decoration: none;
     font-size: spacing(4);
-    color: blueviolet;
+    color: $color-link-text;
     font-weight: bold;
   }
 
@@ -20,7 +19,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: blueviolet;
+    background-color: $color-label-blue;
     animation: pulse 1s infinite;
   }
 }

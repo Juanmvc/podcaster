@@ -21,8 +21,8 @@
 
   &__text-container {
     display: flex;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0px 2px 4px #e8e8e8;
+    border: 1px solid $color-grey-faded;
+    box-shadow: 0px 2px 4px $color-grey-shadow;
     margin-top: spacing(8);
     padding-top: spacing(8);
     padding-left: spacing(2);

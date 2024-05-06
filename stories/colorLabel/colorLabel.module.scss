@@ -3,9 +3,9 @@
 .color-label {
     border-radius: 20px;
     padding: spacing(1);
-    background-color: #4169E1;
+    background-color: $color-label-blue;
     width: fit-content;
     text-align: center;
     min-width: spacing(6);
-    color: white;
+    color: $color-white;
 }
