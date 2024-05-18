@@ -8,7 +8,7 @@
     releaseDate: string;
     trackId: number;
     trackName: string;
-    trackCount: number;
     shortDescription: string;
     description: string;
+    [trackCount: string]: any;
 }

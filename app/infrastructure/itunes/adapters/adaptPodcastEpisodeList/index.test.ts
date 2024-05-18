@@ -6,6 +6,6 @@ describe("adaptPodcastEpisodeList adapter", () => {
   it("should return the Podcasts episodes entities with the correct format", () => {
     const adapterResult = adaptPodcastEpisodeList(mockPodcastEpisodeList);
 
-    expect(adapterResult).toEqual(mockAdaptedPodcastEpisodeList);
+    expect(adapterResult.episodes).toEqual(mockAdaptedPodcastEpisodeList);
   });
 });
