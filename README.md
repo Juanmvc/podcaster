@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a podcast project created using next 14 and react 18
 
 ## Getting Started
 
-First, run the development server:
+To install dependencies:
+
+```bash
+npm install
+```
+
+To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To make the production build:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+To start the production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start storybook with all components used in the app:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run storybook
+```
 
-## Deploy on Vercel
+You can also run the tests created using jest with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the Podcaster app.
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the Storybook app.
+
+## Technical decisions for the project
+
+### Entity Design
+**Readonly Attributes**: In the entities I have developed, I have chosen to use readonly attributes instead of private ones. This is because these attributes should be immutable, and do not require getter methods for access, as they do not need prior computations or interpretations. For more complex entities, I would consider making the attributes private and use getters and setters as needed. Also, I would be inclined to use a "create" design pattern rather than directly instantiating entities in the project, especially if they require additional business logic or validations during creation.
+
+### Organization of Components and Projects
+**Standalone Components**: In larger projects, I would be inclined to move component definitions out of Storybook, placing them in a separate package. This would allow sharing these components as dependencies between different projects, improving code reusability and maintainability.
+  
+**Core Package**: In larger projects or with multiple applications, I would consider centralizing the business logic (including infrastructure, application and domain) in a "core" package. This would facilitate reuse and access to this logic by other applications, promoting a more modular and scalable architecture.
+
+### Limitations and Pending Solutions
+**Router Events in Next.js 13 and 14**: It is not possible to use router.events in the new router of Next.js version 13 and 14. Therefore, I have not implemented the functionality that shows a visual warning to the user during the loading of a new page, although the Navbar component is prepared to receive that property and the animation is implemented. The solution proposed by Vercel is not completely satisfactory for my case, and a more detailed review is required to find a suitable alternative. You can follow the issue thread at the following link: https://github.com/vercel/next.js/discussions/41934.
