@@ -14,4 +14,11 @@ module.exports = {
       '**/__tests__/**/*.ts?(x)',
       '**/?(*.)+(spec|test).ts?(x)',
     ],
+
+    transform: {
+      "^.+\\.(ts|tsx)$": ["ts-jest", {
+        tsconfig: "./tsconfig.test.json",
+      }]
+    },
+    
   };
