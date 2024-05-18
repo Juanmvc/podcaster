@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   margin-left: spacing(2);
   margin-right: spacing(2);
+  margin-bottom: spacing(6);
   gap: spacing(3);
 
   @include media-lg-and-up {
