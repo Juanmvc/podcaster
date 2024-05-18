@@ -22,7 +22,7 @@ export default function PodcastEpisodeList({
   podcastID: number;
 }) {
   const { data } = useQuery({
-    queryKey: ["initial-podcast-episodes"],
+    queryKey: [`initial-podcast-episodes-${podcastID}`],
     queryFn: () => getPodcastEpisodeList({ podcastID }),
     initialData: podcastEpisodes,
     staleTime: one_day_in_ms,
