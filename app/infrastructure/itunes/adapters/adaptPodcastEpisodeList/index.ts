@@ -4,6 +4,7 @@ import PodcastEpisode from "@/app/domain/entities/PodcastEpisode";
 
 const adaptPodcastEpisodeList = (episodesResultsItunes: EpisodesResultsItunes) => {
     const episodes = episodesResultsItunes.results;
+    const episodeCount = episodes[0].trackCount
     episodes.shift()
     const podcastList = episodes.map((episode: EpisodeItunes) => 
         new PodcastEpisode ({
@@ -14,7 +15,7 @@ const adaptPodcastEpisodeList = (episodesResultsItunes: EpisodesResultsItunes) =
             duration: episode.trackTimeMillis,
             url: episode.episodeUrl,
     }));
-    return podcastList;
+    return {count: episodeCount, episodes: podcastList};
 };
 
 export default adaptPodcastEpisodeList;

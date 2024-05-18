@@ -12,7 +12,7 @@ async function PodcastDetailPage(context: { params: { podcastID: string } }) {
   const episodeList = await getPodcastEpisodeList({ podcastID: podcastID });
   const podcast = podcastList.find((podcast) => podcast.id === podcastID);
 
-  const episodeListPrimitive = episodeList.map((episode) =>
+  const episodeListPrimitive = episodeList.episodes.map((episode) =>
     episode.toPrimitive()
   );
 
@@ -30,7 +30,7 @@ async function PodcastDetailPage(context: { params: { podcastID: string } }) {
         <div>
           <div
             className={classes["podcast-detail-page__episodes-count"]}
-          >{`Episodes: ${episodeList.length}`}</div>
+          >{`Episodes: ${episodeList.count}`}</div>
           <PodcastEpisodeList
             podcastEpisodes={episodeListPrimitive}
             podcastID={podcastID}

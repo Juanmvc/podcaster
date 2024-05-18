@@ -24,11 +24,11 @@ export default function PodcastEpisodeList({
   const { data } = useQuery({
     queryKey: [`initial-podcast-episodes-${podcastID}`],
     queryFn: () => getPodcastEpisodeList({ podcastID }),
-    initialData: podcastEpisodes,
+    initialData: {count: podcastEpisodes.length, episodes: podcastEpisodes},
     staleTime: one_day_in_ms,
   });
 
-  const podcastEpisodesEntityList = data.map((podcast) =>
+  const podcastEpisodesEntityList = data.episodes.map((podcast) =>
     PodcastEpisode.fromPrimitive({ ...podcast })
   );
 
