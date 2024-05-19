@@ -5,9 +5,7 @@ import PodcastEpisode, {
 } from "@/app/domain/entities/PodcastEpisode";
 import presentPodcastEpisodesTableRow from "../../presenters/PodcastEpisodeListTablePresenter";
 import classes from "./podcastEpisodeList.module.scss";
-import PodcastEpisodeListTable, {
-  TableRow,
-} from "@/stories/podcastEpisodeListTable/PodcastEpisodeListTable";
+import PodcastEpisodeListTable from "@/stories/podcastEpisodeListTable/PodcastEpisodeListTable";
 import { useQuery } from "@tanstack/react-query";
 import getPodcastEpisodeList from "@/app/application/getPodcastEpisodeList";
 import { one_day_in_ms } from "@/app/domain/const/time";

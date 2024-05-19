@@ -10,5 +10,5 @@
     trackName: string;
     shortDescription: string;
     description: string;
-    [trackCount: string]: any;
+    trackCount?: number;
 }

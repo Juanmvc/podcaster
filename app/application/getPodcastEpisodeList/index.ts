@@ -1,4 +1,3 @@
-import PodcastEpisode from "@/app/domain/entities/PodcastEpisode";
 import { PodcastEpisodeList } from "@/app/domain/entities/PodcastEpisodeList";
 import adaptPodcastEpisodeList from "@/app/infrastructure/itunes/adapters/adaptPodcastEpisodeList";
 import { EpisodesResultsItunes } from "@/app/infrastructure/itunes/itunesTypes/EpisodesResultsItunes";
