@@ -1,4 +1,4 @@
-import PodcastEpisode from "@/app/domain/entities/PodcastEpisode";
+import PodcastEpisode from "@/app/core/domain/entities/PodcastEpisode";
 
 export const mockAdaptedPodcastEpisodeList: PodcastEpisode[] = [
   new PodcastEpisode({

@@ -1,4 +1,4 @@
-import PodcastEpisode from "@/app/domain/entities/PodcastEpisode";
+import PodcastEpisode from "@/app/core/domain/entities/PodcastEpisode";
 import { formatMillisecondsToStandardTime } from "@/app/utils/formatTime";
 import { TableRow } from "@/stories/podcastEpisodeListTable/PodcastEpisodeListTable";
 

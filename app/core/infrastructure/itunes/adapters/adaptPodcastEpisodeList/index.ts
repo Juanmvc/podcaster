@@ -1,6 +1,6 @@
 import { EpisodesResultsItunes } from "../../itunesTypes/EpisodesResultsItunes";
 import { EpisodeItunes } from "../../itunesTypes/EpisodeItunes";
-import PodcastEpisode from "@/app/domain/entities/PodcastEpisode";
+import PodcastEpisode from "@/app/core/domain/entities/PodcastEpisode";
 
 const adaptPodcastEpisodeList = (episodesResultsItunes: EpisodesResultsItunes) => {
     const episodes = episodesResultsItunes.results;

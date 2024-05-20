@@ -1,9 +1,9 @@
 import React from "react";
-import getPodcastEpisodeList from "@/app/application/getPodcastEpisodeList";
-import getPodcastList from "@/app/application/getPodcastList";
 import PodcastDetail from "@/stories/podcastDetail/PodcastDetail";
 import classes from "./page.module.scss";
 import PodcastEpisodeList from "@/app/ui/sections/PodcastEpisodeList";
+import getPodcastEpisodeList from "@/app/core/application/getPodcastEpisodeList";
+import getPodcastList from "@/app/core/application/getPodcastList";
 
 async function PodcastDetailPage(context: { params: { podcastID: string } }) {
   const podcastID = +context.params.podcastID;

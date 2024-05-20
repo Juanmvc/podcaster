@@ -1,7 +1,7 @@
-import Podcast from "@/app/domain/entities/Podcast";
-import adaptPodcastList from "@/app/infrastructure/itunes/adapters/adaptPodcastList";
-import { FeedItunes } from "@/app/infrastructure/itunes/itunesTypes/FeedItunes";
-import PodcastListRepository from "@/app/infrastructure/itunes/repositories/PodcastListRepository";
+import Podcast from "../../domain/entities/Podcast";
+import adaptPodcastList from "../../infrastructure/itunes/adapters/adaptPodcastList";
+import { FeedItunes } from "../../infrastructure/itunes/itunesTypes/FeedItunes";
+import PodcastListRepository from "../../infrastructure/itunes/repositories/PodcastListRepository";
 
 const getPodcastList = async ({
     limit,

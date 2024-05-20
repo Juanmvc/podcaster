@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import PodcastEpisode, {
-  PodcastEpisodePrimitiveProps,
-} from "@/app/domain/entities/PodcastEpisode";
 import presentPodcastEpisodesTableRow from "../../presenters/PodcastEpisodeListTablePresenter";
 import classes from "./podcastEpisodeList.module.scss";
 import PodcastEpisodeListTable from "@/stories/podcastEpisodeListTable/PodcastEpisodeListTable";
 import { useQuery } from "@tanstack/react-query";
-import getPodcastEpisodeList from "@/app/application/getPodcastEpisodeList";
-import { one_day_in_ms } from "@/app/domain/const/time";
+import getPodcastEpisodeList from "@/app/core/application/getPodcastEpisodeList";
+import { one_day_in_ms } from "@/app/core/domain/const/time";
+import PodcastEpisode, { PodcastEpisodePrimitiveProps } from "@/app/core/domain/entities/PodcastEpisode";
+
 
 const MODULE_PREFIX = "podcast-episode-list";
 

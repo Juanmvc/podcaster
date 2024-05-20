@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import classes from "./podcastList.module.scss";
-import Podcast, { PodcastPrimitiveProps } from "@/app/domain/entities/Podcast";
 import ColorLabel from "@/stories/colorLabel/ColorLabel";
 import PodcastSummary from "@/stories/podcast/Podcast";
 import { useState } from "react";
 import { useFilteredList } from "../../hooks/usePodcastFilteredList";
 import { useQuery } from "@tanstack/react-query";
-import getPodcastList from "@/app/application/getPodcastList";
-import { one_day_in_ms } from "@/app/domain/const/time";
+import getPodcastList from "@/app/core/application/getPodcastList";
+import { one_day_in_ms } from "@/app/core/domain/const/time";
+import Podcast, { PodcastPrimitiveProps } from "@/app/core/domain/entities/Podcast";
 
 const MODULE_PREFIX = "podcast-list";
 

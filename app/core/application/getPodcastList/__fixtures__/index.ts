@@ -1,4 +1,4 @@
-import { FeedItunes } from "@/app/infrastructure/itunes/itunesTypes/FeedItunes";
+import { FeedItunes } from "@/app/core/infrastructure/itunes/itunesTypes/FeedItunes";
 
 export const mockPodcastList: FeedItunes = {
   feed: {

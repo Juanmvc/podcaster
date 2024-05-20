@@ -1,4 +1,4 @@
-import { EpisodesResultsItunes } from "@/app/infrastructure/itunes/itunesTypes/EpisodesResultsItunes";
+import { EpisodesResultsItunes } from "@/app/core/infrastructure/itunes/itunesTypes/EpisodesResultsItunes";
 
 export const mockPodcastEpisodeList: EpisodesResultsItunes = {
   results: [

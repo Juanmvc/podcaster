@@ -1,4 +1,4 @@
-import Podcast from "@/app/domain/entities/Podcast";
+import Podcast from "@/app/core/domain/entities/Podcast";
 import { EntryItunes } from "../../itunesTypes/EntryItunes";
 import { FeedItunes } from "../../itunesTypes/FeedItunes";
 

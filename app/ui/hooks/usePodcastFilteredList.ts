@@ -1,5 +1,4 @@
-// useFilteredList.ts
-import Podcast from "@/app/domain/entities/Podcast";
+import Podcast from "@/app/core/domain/entities/Podcast";
 import { useCallback, useMemo } from "react";
 
 export const useFilteredList = (
