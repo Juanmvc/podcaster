@@ -33,7 +33,7 @@ export default function PodcastList({
 
   return (
     <div className={classes[MODULE_PREFIX]}>
-      <div className={classes[`${MODULE_PREFIX}__filter`]}>
+      <div data-test-id="podcast-list-page-filter" className={classes[`${MODULE_PREFIX}__filter`]}>
         <ColorLabel>{filteredPodcastList.length}</ColorLabel>
         <input
           type="search"
@@ -41,7 +41,7 @@ export default function PodcastList({
           onChange={(e) => setValue(e.target.value.trim())}
         />
       </div>
-      <div className={classes[`${MODULE_PREFIX}__grid`]}>
+      <div data-test-id="podcast-list-page-grid" className={classes[`${MODULE_PREFIX}__grid`]}>
         {filteredPodcastList.map(({ id, title, author, imageUrl }) => (
           <PodcastSummary
             key={id}

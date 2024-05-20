@@ -29,12 +29,25 @@ const PodcastDetail: React.FC<PodcastDetailProps> = ({
         />
       </div>
       <div className={classes[`${MODULE_PREFIX}__title-author-container`]}>
-        <h2 className={classes[`${MODULE_PREFIX}__title`]}>{title}</h2>
-        <p className={classes[`${MODULE_PREFIX}__author`]}>{author}</p>
+        <h2
+          data-test-id="podcast-detail-page-title"
+          className={classes[`${MODULE_PREFIX}__title`]}
+        >
+          {title}
+        </h2>
+        <p
+          data-test-id="podcast-detail-page-author"
+          className={classes[`${MODULE_PREFIX}__author`]}
+        >
+          {author}
+        </p>
       </div>
       <div className={classes[`${MODULE_PREFIX}__description-container`]}>
         <p className={classes[`${MODULE_PREFIX}__description`]}>Description:</p>
-        <p className={classes[`${MODULE_PREFIX}__description-text`]}>
+        <p
+          data-test-id="podcast-detail-page-description"
+          className={classes[`${MODULE_PREFIX}__description-text`]}
+        >
           {description}
         </p>
       </div>

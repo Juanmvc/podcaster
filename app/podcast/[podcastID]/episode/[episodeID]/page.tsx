@@ -13,10 +13,15 @@ async function PodcastEpisodeDetailPage(context: {
   const podcastList = await getPodcastList({ limit: 100, genreID: 1310 });
   const episodeList = await getPodcastEpisodeList({ podcastID: podcastID });
   const podcast = podcastList.find((podcast) => podcast.id === podcastID);
-  const episode = episodeList.episodes.find((episode) => episode.id === episodeID);
+  const episode = episodeList.episodes.find(
+    (episode) => episode.id === episodeID
+  );
 
   return (
-    <div className={classes["episode-detail-page"]}>
+    <div
+      data-test-id="podcast-episode-detail-page"
+      className={classes["episode-detail-page"]}
+    >
       {podcast && (
         <PodcastDetail
           title={podcast.title}

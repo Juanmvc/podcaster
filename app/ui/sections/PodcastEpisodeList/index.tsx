@@ -6,8 +6,9 @@ import PodcastEpisodeListTable from "@/stories/podcastEpisodeListTable/PodcastEp
 import { useQuery } from "@tanstack/react-query";
 import getPodcastEpisodeList from "@/app/core/application/getPodcastEpisodeList";
 import { one_day_in_ms } from "@/app/core/domain/const/time";
-import PodcastEpisode, { PodcastEpisodePrimitiveProps } from "@/app/core/domain/entities/PodcastEpisode";
-
+import PodcastEpisode, {
+  PodcastEpisodePrimitiveProps,
+} from "@/app/core/domain/entities/PodcastEpisode";
 
 const MODULE_PREFIX = "podcast-episode-list";
 
@@ -21,7 +22,7 @@ export default function PodcastEpisodeList({
   const { data } = useQuery({
     queryKey: [`initial-podcast-episodes-${podcastID}`],
     queryFn: () => getPodcastEpisodeList({ podcastID }),
-    initialData: {count: podcastEpisodes.length, episodes: podcastEpisodes},
+    initialData: { count: podcastEpisodes.length, episodes: podcastEpisodes },
     staleTime: one_day_in_ms,
   });
 
@@ -36,7 +37,9 @@ export default function PodcastEpisodeList({
 
   return (
     <div className={classes[MODULE_PREFIX]}>
-      <PodcastEpisodeListTable rows={podcastEpisodesTableRows} />
+      <PodcastEpisodeListTable
+        rows={podcastEpisodesTableRows}
+      />
     </div>
   );
 }

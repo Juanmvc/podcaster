@@ -1,4 +1,4 @@
-import getPodcastList from "./application/getPodcastList";
+import getPodcastList from "./core/application/getPodcastList";
 import PodcastList from "./ui/sections/PodcastList";
 import React from "react";
 
@@ -9,7 +9,7 @@ async function PodcastListPage() {
   );
 
   return (
-    <div>
+    <div data-test-id="podcast-list-page">
       <PodcastList podcastList={podcastListPrimitive} />
     </div>
   );

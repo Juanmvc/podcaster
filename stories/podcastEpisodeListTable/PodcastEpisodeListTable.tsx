@@ -18,7 +18,10 @@ const PodcastEpisodeListTable: React.FC<PodcastEpisodeListTableProps> = ({
   rows,
 }) => {
   return (
-    <div className={classes[MODULE_PREFIX]}>
+    <div
+      data-test-id="podcast-detail-page-episode-list"
+      className={classes[MODULE_PREFIX]}
+    >
       <table className={classes[`${MODULE_PREFIX}__table`]}>
         <thead>
           <tr>

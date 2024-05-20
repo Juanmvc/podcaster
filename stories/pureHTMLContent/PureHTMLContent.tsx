@@ -8,7 +8,7 @@ type PureHTMLContentProps = {
 const PureHTMLContent = ({ html }: PureHTMLContentProps) => {
   return (
     <div
-      data-testid="audio-control"
+      data-test-id="html-content"
       className={classes["PureHTMLContent"]}
       dangerouslySetInnerHTML={{ __html: html }}
     />

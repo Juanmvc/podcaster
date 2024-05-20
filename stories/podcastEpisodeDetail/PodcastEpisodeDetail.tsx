@@ -16,10 +16,22 @@ const PodcastEpisodeDetail: React.FC<PodcastEpisodeDetailProps> = ({
   audioUrl,
 }) => {
   return (
-    <div className={classes[MODULE_PREFIX]}>
-      <h2 className={classes[`${MODULE_PREFIX}__title`]}>{title}</h2>
+    <div
+      data-test-id="episode"
+      className={classes[MODULE_PREFIX]}
+    >
+      <h2
+        data-test-id="episode-title"
+        className={classes[`${MODULE_PREFIX}__title`]}
+      >
+        {title}
+      </h2>
       <PureHTMLContent html={description} />
-      <audio controls className={classes[`${MODULE_PREFIX}__audio-control`]}>
+      <audio
+        data-test-id="episode-audio"
+        controls
+        className={classes[`${MODULE_PREFIX}__audio-control`]}
+      >
         <source src={audioUrl} />
         Your browser does not support the audio element.
       </audio>
