@@ -14,12 +14,17 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: spacing(1);
+    grid-template-columns: 1fr;
+    gap: spacing(3);
+
+    @include media-md-and-up {
+      grid-template-columns: repeat(3, 1fr);
+      gap: spacing(3);
+    }
 
     @include media-lg-and-up {
       grid-template-columns: repeat(4, 1fr);
-      gap: spacing(2);
+      gap: spacing(3.5);
     }
   }
 }

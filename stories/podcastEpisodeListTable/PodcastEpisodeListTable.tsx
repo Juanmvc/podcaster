@@ -45,7 +45,7 @@ const PodcastEpisodeListTable: React.FC<PodcastEpisodeListTableProps> = ({
               }
             >
               <td className={classes[`${MODULE_PREFIX}__table__row-title`]}>
-                <a href={row.url}>{row.title}</a>
+                <a className={classes[`${MODULE_PREFIX}__table__row-title__link`]} href={row.url}>{row.title}</a>
               </td>
               <td className={classes[`${MODULE_PREFIX}__table__row-date`]}>
                 {row.date}

@@ -47,9 +47,12 @@
 
     &__row-title {
       width: 70%;
-      a {
+      &__link {
         text-decoration: none;
         color: $color-link-text;
+        &:hover {
+          color: darken($color: $color-link-text, $amount: 30%);
+        }
       }
     }
   }

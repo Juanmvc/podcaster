@@ -22,7 +22,7 @@ describe("PodcastEpisodeDetail Component", () => {
 
     expect(getByText("This is a test description.")).toBeInTheDocument();
 
-    const audioElement = getByTestId("audio-control");
+    const audioElement = getByTestId("episode-audio");
     expect(audioElement).toBeInTheDocument();
   });
 });

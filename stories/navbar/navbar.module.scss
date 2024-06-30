@@ -13,6 +13,10 @@
     font-size: spacing(4);
     color: $color-link-text;
     font-weight: bold;
+
+    &:hover {
+      color: darken($color: $color-link-text, $amount: 30%);
+    }
   }
 
   &-pulse-indicator {
