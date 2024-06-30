@@ -19,7 +19,7 @@ async function PodcastEpisodeDetailPage(context: {
 
   return (
     <div
-      data-test-id="podcast-episode-detail-page"
+      data-testid="podcast-episode-detail-page"
       className={classes["episode-detail-page"]}
     >
       {podcast && (

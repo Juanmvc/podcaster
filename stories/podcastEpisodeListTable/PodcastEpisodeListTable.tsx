@@ -19,7 +19,7 @@ const PodcastEpisodeListTable: React.FC<PodcastEpisodeListTableProps> = ({
 }) => {
   return (
     <div
-      data-test-id="podcast-detail-page-episode-list"
+      data-testid="podcast-detail-page-episode-list"
       className={classes[MODULE_PREFIX]}
     >
       <table className={classes[`${MODULE_PREFIX}__table`]}>

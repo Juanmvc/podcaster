@@ -9,7 +9,7 @@ async function PodcastListPage() {
   );
 
   return (
-    <div data-test-id="podcast-list-page">
+    <div data-testid="podcast-list-page">
       <PodcastList podcastList={podcastListPrimitive} />
     </div>
   );

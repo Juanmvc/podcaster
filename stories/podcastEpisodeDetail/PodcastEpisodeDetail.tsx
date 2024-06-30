@@ -17,18 +17,18 @@ const PodcastEpisodeDetail: React.FC<PodcastEpisodeDetailProps> = ({
 }) => {
   return (
     <div
-      data-test-id="episode"
+      data-testid="episode"
       className={classes[MODULE_PREFIX]}
     >
       <h2
-        data-test-id="episode-title"
+        data-testid="episode-title"
         className={classes[`${MODULE_PREFIX}__title`]}
       >
         {title}
       </h2>
       <PureHTMLContent html={description} />
       <audio
-        data-test-id="episode-audio"
+        data-testid="episode-audio"
         controls
         className={classes[`${MODULE_PREFIX}__audio-control`]}
       >

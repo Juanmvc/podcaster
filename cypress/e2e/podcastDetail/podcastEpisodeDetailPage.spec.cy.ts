@@ -4,14 +4,14 @@ describe("Podcast Episode Detail Page", () => {
     });
   
     it("It should display the page", () => {
-      cy.get('[data-test-id="podcast-episode-detail-page"]').should("be.visible");
+      cy.get('[data-testid="podcast-episode-detail-page"]').should("be.visible");
     });
   
     it("It should show the episode details", () => {
-      cy.get('[data-test-id="episode"]').should("be.visible");
-      cy.get('[data-test-id="episode-title"]').should("be.visible");
-      cy.get('[data-test-id="html-content"]').should("be.visible");
-      cy.get('[data-test-id="episode-audio"]').should("be.visible");
+      cy.get('[data-testid="episode"]').should("be.visible");
+      cy.get('[data-testid="episode-title"]').should("be.visible");
+      cy.get('[data-testid="html-content"]').should("be.visible");
+      cy.get('[data-testid="episode-audio"]').should("be.visible");
     });
   
   });

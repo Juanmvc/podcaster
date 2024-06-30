@@ -17,7 +17,7 @@ async function PodcastDetailPage(context: { params: { podcastID: string } }) {
   );
 
   return (
-    <div data-test-id="podcast-detail-page" className={classes["podcast-detail-page"]}>
+    <div data-testid="podcast-detail-page" className={classes["podcast-detail-page"]}>
       {podcast && (
         <PodcastDetail
           title={podcast.title}
