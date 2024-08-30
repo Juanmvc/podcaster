@@ -58,9 +58,3 @@ Open [http://localhost:6006](http://localhost:6006) with your browser to see the
   
 **Core Package**: In larger projects or with multiple applications, I would consider centralizing the business logic (including infrastructure, application and domain) in a "core" external package. This would facilitate reuse and access to this logic by other applications, promoting a more modular and scalable architecture.
 
-### Limitations and Pending Solutions
-**Router Events in Next.js 13 and 14**: It is not possible to use router.events in the new router of Next.js version 13 and 14. Therefore, I have not implemented the functionality that shows a visual warning to the user during the loading of a new page, although the Navbar component is prepared to receive that property and the animation is implemented. The solution proposed by Vercel is not completely satisfactory for my case, and a more detailed review is required to find a suitable alternative. 
-
-From vercel they plan to add a "built-in" option but for the moment they only propose to make a wrapper of all the links (or navigation components) using useTransitions, in a real project I would apply that solution but it is something temporary and "hacky".
-
-You can follow the issue thread at the following link: https://github.com/vercel/next.js/discussions/41934.
