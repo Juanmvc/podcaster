@@ -1,6 +1,6 @@
 This is a podcast project created using next 14 and react 18
 
-## Description of the proyect
+## Description of the project
 
 In this application you can listen to the podcasts that itunes has in its free api. The application loads the 50 podcasts from its api and allows a local filtering for a quick search among them. It also saves the last podcast visited locally (for 24 hours) so that you can continue listening at another time without the need to load it again.
 
