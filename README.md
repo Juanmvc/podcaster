@@ -7,13 +7,21 @@ In this application you can listen to the podcasts that itunes has in its free a
 The application has three views:
 
 Podcast list view
+
 ![imagen](https://github.com/user-attachments/assets/57e136d3-9fd4-4286-accb-9f38b9ea3118)
 
+
+
 View of the details of a podcast with the list of episodes
+
 ![imagen](https://github.com/user-attachments/assets/e0ac40b1-50ad-4bb9-ae54-7596d4fea531)
 
+
+
 Details view of an episode where you can listen it
+
 ![imagen](https://github.com/user-attachments/assets/911375e7-12fa-4510-9851-59b481c3108e)
+
 
 
 ## Getting Started
